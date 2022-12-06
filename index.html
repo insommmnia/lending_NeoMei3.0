@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Главная</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- CSS only -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body class="body">
+    <nav class="header pt-2">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container  " style="--bs-gutter-x: 0 !important;">
+                <img src="img/logo.png" class="logo_img" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon " style="background-image:  url(img/menu.png);filter: brightness(1);"></span>
+              </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+                    <ul class="navbar-nav  gap-lg-5 gap-sm-3 gap-3 mt-lg-0 mt-sm-4 mt-4 p-4">
+                        <li class="nav-item ">
+                            <a class="header-link" aria-current="page" href="#home"><span>Главная</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header-link" href="#about-us"><span>О нас</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header-link" href="#timer"><span>Таймер</span> </a>
+                        </li>
+                        <li class="nav-item pb-4 pb-lg-0 pb-sm-4">
+                            <a class="header-link" href="#contact"><span>Контакты</span> </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </nav>
+    <canvas></canvas>
+    <main style="overflow: hidden;">
+        <div class="bg-fixed_back"></div>
+        <div class="bg-fixed"></div>
+        <div class="bg-fixed2"></div>
+        <!-- partial:index.partial.html -->
+        <section id="home" class="hero  ">
+            <div class=" hero-container">
+                <div class="container  ml-4">
+                    <div class="row ">
+                        <div class="justify-content-center d-grid gap-3 d-md-flex hero-content">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 hero-textbox ">
+                                <div class="hero-title ">
+                                    <h1>NeoMei - ваш помощник в подборе персонала</h1>
+                                </div>
+                                <div class="hero-descr ">
+                                    <p>В основе наших решений лежат уникальные идеи и технологии, способные улучшить ваше дело.
+                                    </p>
+                                </div>
+                                <a href="# " class="hero-link ">
+                                    <svg version="1.1 " id="Layer_1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " viewBox="0 0 494.148 494.148 " style="enable-background:new 0 0 494.148 494.148;
+            " xml:space="preserve ">
+                                <g>
+                                    <g>
+                                           <path d="M405.284,201.188L130.804,13.28C118.128,4.596,105.356,0,94.74,0C74.216,0,61.52,16.472,61.52,44.044v406.124 c0,27.54,12.68,43.98,33.156,43.98c10.632,0,23.2-4.6,35.904-13.308l274.608-187.904c17.66-12.104,27.44-28.392,27.44-45.884
+            C432.632,229.572,422.964,213.288,405.284,201.188z "></path>
+                                    </g>
+                                </g>
+                            </svg>
+                                    <span>Подробнее</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12 hero-imgbox d-md-flex  d-none">
+                                <div class="col-lg-4 col-md-2 col-sm-7 "></div>
+                                <div class="col-lg-8 col-md-10 col-sm-5 ">
+                                    <img src="img/hero.png " alt=" " class="hero-img col w-100 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section id="about-us" class="about-us-section pb-5 mt-md-5 mt-0">
+            <div class="container about-us-container ">
+                <h1 class="pb-5 ">Что мы предлагаем?</h1>
+
+                <div class="row about-us-services pt-sm-5 pt-md-5 ">
+
+                    <div class="d-md-flex services-box">
+                        <div class="col-md-12 d-grid gap-3 card_aboutus d-sm-flex gap-lg-5 gap-sm-5 mt-sm-5 justify-content-center ">
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-8 mx-auto card_aboutus-body mt-5 ">
+                                <div class="col card_aboutus-imgbox ">
+                                    <div class=" col-8 ">
+                                        <div class="card_aboutus-img ">
+                                            <img class="col-md-7 col-sm-9 col-6 aboutus-img " src="img/card-services.png " alt=" ">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="text-animate " class="card_aboutus-main p-4 ">
+                                    <div class="card_aboutus-textbox ">
+                                        <h1 class="card_aboutus-title ">Наши услуги </h1>
+                                    </div>
+                                    <div class="card_aboutus-descr-box ">
+                                        <h3 class="card_aboutus-descr ">Автоматизация человеческого труда
+
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-8 mx-auto card_aboutus-body mt-5 ">
+                                <div class="col card_aboutus-imgbox ">
+                                    <div class=" col-8 ">
+                                        <div class="card_aboutus-img ">
+                                            <img class="col-md-7 col-sm-9 col-6 aboutus-img " src="img/card-adv.png" alt=" ">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="text-animate " class="card_aboutus-main p-4 ">
+                                    <div class="card_aboutus-textbox ">
+                                        <h1 class="card_aboutus-title ">Наши преимущества </h1>
+                                    </div>
+                                    <div class="card_aboutus-descr-box ">
+                                        <h3 class="card_aboutus-descr ">Улучшение подбора персонала
+
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-8 mx-auto card_aboutus-body mt-5 ">
+                                <div class="col card_aboutus-imgbox ">
+                                    <div class=" col-8 ">
+                                        <div class="card_aboutus-img ">
+                                            <img class="col-md-7 col-sm-9 col-6 aboutus-img " src="img/card-ai.png" alt=" ">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="text-animate " class="card_aboutus-main p-4 ">
+                                    <div class="card_aboutus-textbox ">
+                                        <h1 class="card_aboutus-title ">Высокие технологии</h1>
+                                    </div>
+                                    <div class="card_aboutus-descr-box ">
+                                        <h3 class="card_aboutus-descr ">Искусственный интеллект
+
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="description" class="description-section">
+            <div class="container">
+                <div class=" row  services justify-content-center   justify-content-sm-center justify-content-md-center justify-content-lg-end">
+                    <div class="col-lg-6 col-sm-10 services-content  ">
+                        <div class="services-content-title-box  mx-auto">
+                            <h1 class="services-content-title">НАШИ УСЛУГИ</h1>
+                        </div>
+                        <div class="mx-auto col-10 mt-5">
+                            <h4 class="services-content-descr"> Оптимизация подбора сотрудников при помощи системы баллов, приоритета и гибкого анкетирования. Гарантия надежности, автоматизация и уникальные шаблоны.</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class=" row  services2 justify-content-center   justify-content-sm-center justify-content-md-center justify-content-lg-start">
+                    <div class="col-lg-6 col-sm-10 services2-content  ">
+                        <div class="services2-content-title-box  mx-auto">
+                            <h1 class="services2-content-title">НАШИ ПРЕИМУЩЕСТВА</h1>
+                        </div>
+                        <div class="mx-auto col-10 mt-5">
+                            <h4 class="services2-content-descr">&#9675; Экономия времени. С нашим продуктом вы сэкономите до 70% времени на тестирование кандидата</h4>
+                        </div>
+                        <div class="mx-auto col-10 mt-5">
+                            <h4 class="services2-content-descr">&#9675; Набор вопросов подбирается индивидуально, а также может быть изменен по вашему запросу.</h4>
+                        </div>
+                        <div class="mx-auto col-10 mt-5">
+                            <h4 class="services2-content-descr">&#9675; 100% анкет проверяется автоматически, а также определяется актуальность будущего сотрудника при помощи ИИ</h4>
+                        </div>
+                        <div class="mx-auto col-10 mt-5">
+                            <h4 class="services2-content-descr">&#9675; Лучшего кандидата вы найдете сразу! В первую очередь будут вызваны лучшие из лучших.</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class=" row  services3 justify-content-center   justify-content-sm-center justify-content-md-center justify-content-lg-end">
+                    <div class="col-lg-6 col-sm-10 services3-content  ">
+                        <div class="services3-content-title-box  mx-auto">
+                            <h1 class="services3-content-title">ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ
+                            </h1>
+                        </div>
+                        <div class="mx-auto col-10 mt-5">
+                            <h4 class="services3-content-descr"> Наш ресурс использует искусственный интеллект, который непрерывно обучается для качественного анализа анкет и определения актуальности кандидата.
+
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="timer" class="timer-section ">
+            <div class="conainer timer-container  justify-content-center ">
+                <div class="row">
+                    <div class="timer-box mx-auto col-12 d-flex   justify-content-center">
+                        <div class="timer col-12 col-sm-10 my-auto   justify-content-center">
+                            <div class="timer-grid col-md-8 col-10 mx-auto">
+
+                                <div class="col timer-days">
+                                    <div class="text-center ">
+                                        <h1>245</h1>
+                                    </div>
+                                    <div class="text-center">
+                                        <h4>Дней</h4>
+                                    </div>
+                                </div>
+                                <div class="col timer-hrs">
+                                    <div class="text-center">
+                                        <h1>18</h1>
+                                    </div>
+                                    <div class="text-center">
+                                        <h4>Часов</h4>
+                                    </div>
+                                </div>
+
+
+                                <div class="col timer-min">
+                                    <div class="text-center">
+                                        <h1>54</h1>
+                                    </div>
+                                    <div class="text-center">
+                                        <h4>Минут</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col  timer-sec">
+                                    <div class="text-center ">
+                                        <h1>14</h1>
+                                    </div>
+                                    <div class="text-center">
+                                        <h4>Секунд</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 timer-title text-center ">
+                                <h1>ДО ВЫХОДА ДЕМО-ВЕРСИИ</h1>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="contact" style="overflow: hidden;">
+            <div class="justify-content-center d-flex col-12 contact_box">
+                <div class="container">
+                    <div class="   forma  col-10 mx-auto p-4">
+                        <h3>Отправить заявку</h3>
+                        <form class=" pb-2 row ">
+                            <div class="col-md-5 col-12 mt-4">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label form_contact_title">Ваше ФИО</label>
+                                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                </div>
+                                <div class="mb-3 pt-2">
+                                    <label for="exampleInputPassword1" class="form-label form_contact_title">Почта</label>
+                                    <input type="email" class="form-control" id="exampleInputPassword1">
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-12 mt-4">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label form_contact_title">Хотите вступить к нам в команду? Расскажите о себе!</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12  mt-5">
+                                <div class="col-md-3 col-5  mx-auto">
+                                    <button type="submit" class="btn col-12 " style="background-color: #373161 !important; border: none !important; color: white !important">Отправить</button>
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-xxl  footer-main bor-top ">
+                <footer class="d-md-flex d-sm-grid flex-wrap col-12 py-3 my-4 justify-content-sm-center justify-content-md-between gap-2 ">
+                    <div class="order-1 order-md-0 col-lg-2 col-md-2 col-12 justify-content-center d-flex align-items-center mt-0 mt-sm-0 ">
+                        <img src="img/logo.png" class="logo_img_footer" alt="">
+                    </div>
+                    <ul class=" order-first order-md-0 mt-md-4 mt-4 col-lg-5 col-md-6 col-12 mx-auto nav align-self-center justify-content-center pb-0 mb-0 border-md-bottom ">
+                        <li class="nav-item "><a href="#home " class="nav-link px-3 text-white ">Главная</a></li>
+                        <li class="nav-item "><a href="#about-us " class="nav-link px-3 text-white">О нас</a></li>
+                        <li class="nav-item "><a href="#timer" class="nav-link px-3 text-white ">Таймер</a></li>
+                        <li class="nav-item "><a href="#contact " class="nav-link px-3 text-white ">Контакты</a></li>
+                    </ul>
+                    <ul class="order-2 order-md-0 mt-md-0 mt-5 nav col-lg-2 col-md-2 d-flex justify-content-center justify-content-md-around col-12 footer-links ">
+                        <div class="d-flex col-lg-12 gap-4">
+                            <li class="icon-item pr-3 justify-content-center ">
+                                <a href=" " class="icon-link justify-content-center ">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">
+                                                <g>
+                                                    <circle style="fill:#55ACEE;" cx="56.099" cy="56.098" r="56.098"/>
+                                                    <g>
+                                                        <path style="fill:#F1F2F2;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417
+                                                            c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409
+                                                            c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742
+                                                            c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17
+                                                            c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239
+                                                            c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188
+                                                            c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734
+                                                            C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+                                                    </g>
+                                                </g>
+
+                                            </svg>
+
+                                </a>
+                            </li>
+                            <li class="icon-item ">
+                                <a href=" " class="icon-link justify-content-center ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="align-self-center svg-logo " width="48" height="48" fill="none" viewBox="0 0 48 48"><rect width="48" height="48" fill="#419FD9" rx="24"/>
+                                        <rect width="48" height="48" fill="url(#paint0_linear)" rx="24"/>
+                                        <path fill="#fff" d="M10.7874 23.4709C17.7667 20.3663 22.4206 18.3195 24.7493 17.3305C31.3979 14.507 32.7795 14.0165 33.68 14.0002C33.878 13.9968 34.3208 14.0469 34.6077 
+                                        14.2845C34.8499 14.4852 34.9165 14.7563 34.9484 14.9465C34.9803 15.1368 35.02 15.5702 34.9884 15.9088C34.6281 19.774 33.0692 29.1539 32.276 33.483C31.9404 35.3148 
+                                        31.2796 35.929 30.6399 35.9891C29.2496 36.1197 28.1938 35.051 26.8473 34.1497C24.7401 32.7395 23.5498 31.8615 21.5044 30.4854C19.1407 28.895 20.673 28.0209 22.0201 
+                                        26.5923C22.3726 26.2185 28.4983 20.5295 28.6169 20.0135C28.6317 19.9489 28.6455 19.7083 28.5055 19.5813C28.3655 19.4543 28.1589 19.4977 28.0098 19.5322C27.7985 
+                                        19.5812 24.4323 21.8529 17.9113 26.3473C16.9558 27.0172 16.0904 27.3435 15.315 27.3264C14.4602 27.3076 12.8159 26.833 11.5935 26.4273C10.0942 25.9296 8.90254 
+                                        25.6666 9.0063 24.8215C9.06035 24.3813 9.65403 23.9311 10.7874 23.4709Z"/><defs><linearGradient id="paint0_linear" x1="24" x2="24" y2="47.644" 
+                                        gradientUnits="userSpaceOnUse"><stop stop-color="#2AABEE"/><stop offset="1" stop-color="#229ED9"/></linearGradient></defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </footer>
+            </div>
+        </section>
+        <section id="test-demo">
+
+        </section>
+
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <!-- partial -->
+    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
