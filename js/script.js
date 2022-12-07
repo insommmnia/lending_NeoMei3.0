@@ -14,6 +14,30 @@ const mediaQuery2 = window.matchMedia('(max-width: 992px)');
 const mediaQuery3 = window.matchMedia('(max-width: 576px)');
 var scrolled_event1 = 0;
 
+$(".au-link").click(function() {
+    $('html,body').animate({
+            scrollTop: $(".about-us-section").offset().top
+        },
+        20);
+});
+$(".hm-link").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#home").offset().top
+        },
+        20);
+});
+$(".tm-link").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#timer").offset().top
+        },
+        20);
+});
+$(".ct-link").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#contact").offset().top
+        },
+        20);
+});
 /* function onScrolledTo(el, callback) {
 
     // Определяем нормализованное смещение элемента в видимой области окна (от 0 до 1)
@@ -74,7 +98,7 @@ $(function() {
         } else {
             document.querySelector(".forma").style.opacity = 0;
             document.querySelector(".forma").style.transform = "translateY(100%)";
-            document.querySelector(".forma").style.transition = "0.3s cubic-bezier(0.645, 0.045, 0.355, 1)";
+            document.querySelector(".forma").style.transition = "0.7s cubic-bezier(0.645, 0.045, 0.355, 1)";
 
         }
 

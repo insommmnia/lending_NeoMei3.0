@@ -23,23 +23,31 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container  " style="--bs-gutter-x: 0 !important;">
                 <img src="img/logo.png" class="logo_img" alt="">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon " style="background-image:  url(img/menu.png);filter: brightness(1);"></span>
+                <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon " style="background-image:  url(img/menu-icon.svg);filter: brightness(1);"></span>
               </button>
                 <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
-                    <ul class="navbar-nav  gap-lg-5 gap-sm-3 gap-3 mt-lg-0 mt-sm-4 mt-4 p-4">
-                        <li class="nav-item ">
-                            <a class="header-link" aria-current="page" href="#home"><span>Главная</span> </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="header-link" href="#about-us"><span>О нас</span> </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="header-link" href="#timer"><span>Таймер</span> </a>
-                        </li>
-                        <li class="nav-item pb-4 pb-lg-0 pb-sm-4">
-                            <a class="header-link" href="#contact"><span>Контакты</span> </a>
-                        </li>
+                    <ul class="navbar-nav  gap-lg-5 gap-sm-3 gap-4 mt-lg-0 mt-sm-4 mt-4 p-4">
+                        <button class="head-links">
+                            <li class="nav-item ">
+                                <a class="header-link hm-link" aria-current="page"><span>Главная</span> </a>
+                            </li>
+                        </button>
+                        <button class="head-links">
+                            <li class="nav-item">
+                                <a class="header-link au-link"><span>О нас</span> </a>
+                            </li>
+                        </button>
+                        <button class="head-links">
+                            <li class="nav-item">
+                                <a class="header-link tm-link"><span>Таймер</span> </a>
+                            </li>
+                        </button>
+                        <button class="head-links">
+                            <li class="nav-item pb-4 pb-lg-0 pb-sm-4">
+                                <a class="header-link ct-link"><span>Контакты</span> </a>
+                            </li>
+                        </button>
                     </ul>
                 </div>
 
@@ -47,13 +55,13 @@
         </nav>
 
     </nav>
-    <canvas></canvas>
+    <canvas id="home"></canvas>
     <main style="overflow: hidden;">
         <div class="bg-fixed_back"></div>
         <div class="bg-fixed"></div>
         <div class="bg-fixed2"></div>
         <!-- partial:index.partial.html -->
-        <section id="home" class="hero  ">
+        <section class="hero  ">
             <div class=" hero-container">
                 <div class="container  ml-4">
                     <div class="row ">
@@ -282,7 +290,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" style="overflow: hidden;">
+        <section style="overflow: hidden;">
             <div class="justify-content-center d-flex col-12 contact_box">
                 <div class="container">
                     <div class="   forma  col-10 mx-auto p-4">
@@ -318,19 +326,35 @@
 
                 </div>
             </div>
-            <div class="container-xxl  footer-main bor-top ">
+            <div class="container-xxl  footer-main bor-top " id="contact">
                 <footer class="d-md-flex d-sm-grid flex-wrap col-12 py-3 my-4 justify-content-sm-center justify-content-md-between gap-2 ">
                     <div class="order-1 order-md-0 col-lg-2 col-md-2 col-12 justify-content-center d-flex align-items-center mt-0 mt-sm-0 ">
                         <img src="img/logo.png" class="logo_img_footer" alt="">
                     </div>
-                    <ul class=" order-first order-md-0 mt-md-4 mt-4 col-lg-5 col-md-6 col-12 mx-auto nav align-self-center justify-content-center pb-0 mb-0 border-md-bottom ">
-                        <li class="nav-item "><a href="#home " class="nav-link px-3 text-white ">Главная</a></li>
-                        <li class="nav-item "><a href="#about-us " class="nav-link px-3 text-white">О нас</a></li>
-                        <li class="nav-item "><a href="#timer" class="nav-link px-3 text-white ">Таймер</a></li>
-                        <li class="nav-item "><a href="#contact " class="nav-link px-3 text-white ">Контакты</a></li>
+                    <ul class="gap-4 order-first order-md-0 mt-md-4 mt-4 col-lg-5 col-md-6 col-12 mx-auto nav align-self-center justify-content-center pb-0 mb-0 border-md-bottom ">
+                        <button class="head-links">
+                            <li class="nav-item ">
+                                <a class="header-link hm-link" aria-current="page"><span>Главная</span> </a>
+                            </li>
+                        </button>
+                        <button class="head-links">
+                            <li class="nav-item">
+                                <a class="header-link au-link"><span>О нас</span> </a>
+                            </li>
+                        </button>
+                        <button class="head-links">
+                            <li class="nav-item">
+                                <a class="header-link tm-link"><span>Таймер</span> </a>
+                            </li>
+                        </button>
+                        <button class="head-links">
+                            <li class="nav-item ">
+                                <a class="header-link ct-link"><span>Контакты</span> </a>
+                            </li>
+                        </button>
                     </ul>
                     <ul class="order-2 order-md-0 mt-md-0 mt-5 nav col-lg-2 col-md-2 d-flex justify-content-center justify-content-md-around col-12 footer-links ">
-                        <div class="d-flex col-lg-12 gap-4">
+                        <div class="d-flex col-lg-12 gap-4 mt-1">
                             <li class="icon-item pr-3 justify-content-center ">
                                 <a href=" " class="icon-link justify-content-center ">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve">

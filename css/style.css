@@ -103,7 +103,6 @@ body {
     padding: 0;
     height: 100%;
     z-index: -100;
-    overflow: hidden;
     transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -116,7 +115,6 @@ body {
     padding: 0;
     height: 100%;
     z-index: -100;
-    overflow: hidden;
     transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -130,7 +128,6 @@ body {
     padding: 0;
     height: 100%;
     z-index: -90;
-    overflow: hidden;
     transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -233,6 +230,11 @@ body {
     color: rgb(227, 227, 227);
 }
 
+.head-links {
+    background: transparent;
+    border: none;
+}
+
 .logo_img {
     width: 150px;
     margin-top: -20px;
@@ -243,7 +245,6 @@ body {
 }
 
 .hero {
-    position: relative;
     width: 100vw;
     z-index: 1;
 }
@@ -602,6 +603,7 @@ body {
 
 .icon-item {
     list-style: none;
+    margin-top: auto;
 }
 
 .icon-item:nth-child(1) a:hover:before {
